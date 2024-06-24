@@ -6,7 +6,7 @@ if [ -z "$1" ]; then
 fi
 
 JELLYFIN_BUILD_OPTION="${2:-Jellyfin}";
-TAG_URL="${3:-https://github.com/jeppevinkel/jellyfin-tizen-builds/releases/latest}";
+TAG_URL="${3:-https://github.com/nidh-eesh/jellyfin-tizen-builds/releases/latest}";
 
 if [ -z "$2" ]; then
     echo "Build option not provided, using default one: $JELLYFIN_BUILD_OPTION";
@@ -22,7 +22,7 @@ else
 	TAG=$(echo $TAG_URL | sed 's#.*/##');
 fi
 
-DOWNLOAD_URL=$(echo https://github.com/jeppevinkel/jellyfin-tizen-builds/releases/download/${TAG}/${JELLYFIN_BUILD_OPTION}.wgt);
+DOWNLOAD_URL=$(echo https://github.com/nidh-eesh/jellyfin-tizen-builds/releases/download/${TAG}/${JELLYFIN_BUILD_OPTION}.wgt);
 
 echo ""
 echo ""
